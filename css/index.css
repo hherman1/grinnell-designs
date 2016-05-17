@@ -1,0 +1,101 @@
+html {
+	height:100%;
+}
+body {
+  height:100%;
+  font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+  padding-top: 50px;
+}
+#links {
+	min-height:100%;
+}
+.navbar-fixed-top {
+	background-color:#fff;
+}
+#grinnell-logo {
+	height:130px;
+}
+#about {
+	padding-bottom:60px;
+	padding-top:15px;
+}
+#contact {
+	background-color:#eee;
+}
+.nav>li>a:focus, .nav>li>a:hover {
+    text-decoration: underline;
+    background-color: white;
+}
+/*
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+*/
+.row>a {
+	color:#eee;
+}
+.row>a:hover {
+	text-decoration:none;
+}
+.row>a:hover h1 {
+	text-decoration:underline;
+}
+.fill {
+	opacity: 0;
+        background: rgba(0,0,0,0.5);
+	padding:60px;
+}
+.row>a:hover .fill{
+	opacity:1;
+}
+.col-md-3>.jumbotron {
+	padding:0;
+	border-radius:0px;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.col-md-3 .container {
+	height:101px;
+}
+#links .media-object {
+	height:50px;
+}
+.jumbotron {
+	background-color:white;
+}
+.jumbotron.image {
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+#facebook {
+	//background-color: #4867AA;
+	background-image: url(../assets/web-1.jpg); 
+}
+#linkedin {
+	//background-color: #000000;
+	background-image: url(../assets/web-2.jpg);
+}
+#etsy {
+	//background-color: #000000;
+	background-image: url(../assets/web-3.jpg);
+}
+#etsy img {
+	background-color:white;
+}
+#aboutus {
+	//background-color: #000000;
+	background-image: url(../assets/web-4.jpg);
+}
+#sample3 {
+	background: url(../assets/sample3.jpg) no-repeat center center local; 
+}
+#sample4 {
+	background: url(../assets/sample4.jpg) no-repeat center center local; 
+}
+#sample1 {
+	background: url(../assets/sample1.jpg) no-repeat center center local; 
+}
