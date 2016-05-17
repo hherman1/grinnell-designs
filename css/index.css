@@ -6,7 +6,7 @@ body {
   font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
   padding-top: 50px;
 }
-#links {
+#home {
 	min-height:100%;
 }
 .navbar-fixed-top {
@@ -19,8 +19,9 @@ body {
 	padding-bottom:60px;
 	padding-top:15px;
 }
-#contact {
+#footer {
 	background-color:#eee;
+    margin-bottom:0;
 }
 .nav>li>a:focus, .nav>li>a:hover {
     text-decoration: underline;
@@ -49,6 +50,9 @@ body {
 .row>a:hover .fill{
 	opacity:1;
 }
+#home .col-md-3 {
+        min-width:300px;
+}
 .col-md-3>.jumbotron {
 	padding:0;
 	border-radius:0px;
@@ -59,7 +63,7 @@ body {
 .col-md-3 .container {
 	height:101px;
 }
-#links .media-object {
+#home .media-object {
 	height:50px;
 }
 .jumbotron {
@@ -98,4 +102,8 @@ body {
 }
 #sample1 {
 	background: url(../assets/sample1.jpg) no-repeat center center local; 
+}
+#links ul {
+        list-style-type:none;
+        padding-left:0;
 }
