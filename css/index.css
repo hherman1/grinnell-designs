@@ -23,16 +23,9 @@ body {
 	background-color:#eee;
     margin-bottom:0;
 }
-.nav>li>a:focus, .nav>li>a:hover {
-    text-decoration: underline;
-    background-color: white;
+a, a:focus, a:hover {
+    color:#5B2313;
 }
-/*
-.starter-template {
-  padding: 40px 15px;
-  text-align: center;
-}
-*/
 .row>a {
 	color:#eee;
 }
