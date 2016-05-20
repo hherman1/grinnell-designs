@@ -4,17 +4,41 @@ html {
 body {
   height:100%;
   font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
-  padding-top: 50px;
+  padding-top: 0;
 }
 .full-screen {
 	min-height:100%;
 }
 #home {
-        padding-top:0;
+//       padding-top:50px;
+        margin-bottom:0;
+        position:relative;
+        transform:translateY(-50%);
 }
 #home .page-header {
         margin-top:0;
         padding-top:0;
+        margin-bottom:0;
+}
+
+@media (min-width: 768px) { 
+        #slideshow {
+                transform:translateY(-50%);
+        }
+}
+
+#slideshow {
+        padding:0;
+        margin-bottom:15px;
+//        background: linear-gradient(90deg,#eee,#eee 30%, white 40%,white 60%, #eee 70%,#eee);
+}
+#slideshow-border-top {
+        margin-bottom:0;
+        border-top-color:#eee;
+}
+#slideshow-border-bottom {
+        margin-top:0;
+        border-top-color:#eee;
 }
 #home .vert-align {
     display: inline-block;
@@ -22,30 +46,39 @@ body {
     position: relative;
     top: 50%;
     left: 0;
-    transform: translate(0,-50%);
+    transform: translateY(-50%);
 }
-#home .col-md-4 {
+#home .col-sm-4 {
         margin-bottom:15px;
-        margin-top:35px;
+        margin-top:20px;
 }
 #home .img-responsive {
         max-height:180px;
 }
-#customers .col-md-3 {
+#customers {
+        margin-bottom: 0;
+        padding-bottom:0;
+}
+#customers .col-lg-3 {
         margin-bottom:15px;
 }
-#customers .col-md-3 img {
+#customers .col-lg-3 img {
     position: relative;
     left: 50%;
-    transform: translate(-50%,0);
+    transform: translateX(-50%);
 }
 #social-media-icons img {
         height:50px;
 }
-#social-media-icons img, #jewelry-images img {
+#social-media-icons img, #jewelry-images img, .feature img{
         position:relative;
         left:50%;
-        transform:translate(-50%,0);
+        transform:translateX(-50%);
+}
+#jewelry-images .media {
+        position:relative;
+        top:50%;
+        transform:translateY(-50%);
 }
 #home .highlight {
         z-index:1;
@@ -65,9 +98,48 @@ body {
 #grinnell-logo img{
 	height:130px;
 }
-#about {
+#contact {
 	padding-bottom:60px;
+}
+#about, #contact {
 	padding-top:15px;
+}
+#about {
+        padding-left:0;
+        padding-right:0;
+        padding-bottom:30px;
+        background-color:#eee;
+}
+.feature {
+        padding-top: 30px;
+}
+.feature .row {
+        padding-bottom: 30px;
+}
+.feature .image-container {
+        margin-bottom:30px;
+}
+#feature-1 {
+//        background:linear-gradient(90deg,#eee,white 40%,white);
+}
+#feature-2 {
+/*        background:linear-gradient(90deg,white,white 60%,#eee 100%,white);
+        margin-bottom:60px;*/
+}
+#about .centered {
+        width:75%;
+        position:relative;
+        left:50%;
+        transform:translateX(-50%);
+}
+#about .feature img, #slideshow img {
+        max-height:250px;
+        padding:5px;
+        border: 1px solid #ddd;
+        background-color:white;
+}
+div#about hr, #about .page-header {
+        border-color:#ddd;
 }
 #footer {
 	background-color:#eee;
@@ -104,21 +176,24 @@ a, a:focus, a:hover {
 .row>a:hover .fill{
 	opacity:1;
 }
-#home .col-md-3 {
+#home .col-lg-3 {
         //min-width:300px;
 }
-.col-md-3>.jumbotron {
+.col-lg-3>.jumbotron {
 	padding:0;
 	border-radius:0px;
 	background-size: 100%;
 	background-repeat: no-repeat;
 	background-position: center;
 }
-.col-md-3 .container {
+.col-lg-3 .container {
 	height:101px;
 }
 #home .media-object {
 	height:50px;
+}
+#home .media-body {
+        vertical-align:middle;
 }
 .jumbotron {
 	background-color:white;
@@ -161,3 +236,65 @@ a, a:focus, a:hover {
         list-style-type:none;
         padding-left:0;
 }
+#map {
+        padding:0;
+        height:500px;
+}
+/* jssor slider bullet navigator skin 01 css */
+/*
+.jssorb01 div           (normal)
+.jssorb01 div:hover     (normal mouseover)
+.jssorb01 .av           (active)
+.jssorb01 .av:hover     (active mouseover)
+.jssorb01 .dn           (mousedown)
+*/
+.jssorb01 {
+    position: absolute;
+}
+.jssorb01 div, .jssorb01 div:hover, .jssorb01 .av {
+    position: absolute;
+    /* size of bullet elment */
+    width: 6px;
+    height: 6px;
+    filter: alpha(opacity=70);
+    opacity: .7;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius:3px;
+}
+.jssorb01 div { background-color: gray; }
+.jssorb01 div:hover, .jssorb01 .av:hover { 
+        background-color: #d3d3d3;
+        border: 1px solid gray;
+}
+.jssorb01 .av { 
+        background-color: #fff; 
+        border: gray 1px solid;
+}
+.jssorb01 .dn, .jssorb01 .dn:hover { background-color: #555555; }
+
+/* jssor slider arrow navigator skin 13 css */
+/*
+.jssora13l                  (normal)
+.jssora13r                  (normal)
+.jssora13l:hover            (normal mouseover)
+.jssora13r:hover            (normal mouseover)
+.jssora13l.jssora13ldn      (mousedown)
+.jssora13r.jssora13rdn      (mousedown)
+*/
+.jssora13l, .jssora13r {
+    display: block;
+    position: absolute;
+    /* size of arrow element */
+    width: 40px;
+    height: 50px;
+    cursor: pointer;
+    background: url('img/a13.png') no-repeat;
+    overflow: hidden;
+}
+.jssora13l { background-position: -10px -35px; }
+.jssora13r { background-position: -70px -35px; }
+.jssora13l:hover { background-position: -130px -35px; }
+.jssora13r:hover { background-position: -190px -35px; }
+.jssora13l.jssora13ldn { background-position: -250px -35px; }
+.jssora13r.jssora13rdn { background-position: -310px -35px; }

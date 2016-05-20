@@ -1,0 +1,29 @@
+{
+  "name": "grinnell-designs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "bin": {
+    "grinnell-designs": "bundle.js"
+  },
+  "dependencies": {
+    "jquery": "^2.2.3",
+    "scriptjs": "^2.5.8",
+    "waypoints": "^4.0.0",
+    "webpack": "^1.13.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/hherman1/grinnell-designs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/hherman1/grinnell-designs/issues"
+  },
+  "homepage": "https://gitlab.com/hherman1/grinnell-designs#README"
+}

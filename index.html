@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang='en'>
 	<head>
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<link href="./css/index.css" rel="stylesheet">
 		<link rel="icon" href="./assets/favicon.ico">
 		<meta charset="utf-8">
@@ -13,9 +13,9 @@
 		<title> Grinell Designs </title>
 	</head>
 	<body>
-				  <!-- <a class="navbar-brand" href="#">Grinnell Designs</a> -->
-    <!--
-		<nav class="navbar navbar-fixed-top">
+    <!--				  <a class="navbar-brand" href="#">Grinnell Designs</a> -->
+    
+		<nav class="collapse navbar-collapse navbar navbar-fixed-top">
 			<div class="container">
 				<div class="navbar-header">
 				  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -31,52 +31,40 @@
 				    <li><a href="#about">About</a></li>
 				    <li><a href="#contact">Contact</a></li>
 				  </ul>
-				</div><!--/.nav-collapse --><!--
+				</div><!--/.nav-collapse -->
 			</div>
-		</nav> -->
+		</nav> 
 
         <div class="full-screen">
 		<div id="home" class="jumbotron">
                 <div class="jumbotron page-header">
                 <div class="container">
                                             <div class="row">
-                                            <div class="col-md-6 col-xs-12" id="grinnell-logo">
+                                            <div class="col-sm-6 col-xs-12" id="grinnell-logo">
                                                     <img src="assets/grinnell-logo.jpg">
                                             </div>
-                                            <div class="col-xs-offset-0 col-xs-12 col-md-offset-3 col-md-3">
-                                                    <div class="row" id="social-media-icons">
-                                            <div class="col-xs-4 col-md-4">
-                                              <a href="https://www.facebook.com/Grinnell-Designs-Ltd-170412403038483/">
-                                                      <img class="highlight" src="assets/fb-logo.png">
-                                                      <img src="assets/bw-logos/fb.png" alt="Link to our Facebook">
-                                              </a>
-                                            </div>
-                                            <div class="col-xs-4 col-md-4">
-                                              <a href="https://www.linkedin.com/company/grinnell-designs">
-                                                      <div class="centered">
-                                                      <img class="highlight" src="assets/linkedin-logo.png">
-                                                      <img src="assets/bw-logos/linkedin.png" alt="Link to our LinkedIn">
-                                              </div>
-                                              </a>
-                                              </div>
-                                            <div class="col-xs-4 col-md-4">
-                                              <a href="#" alt="Coming soon">
-                                                     <img class="highlight" src="assets/etsy-logo.png">
-                                                     <img src="assets/bw-logos/etsy.png" alt="Link to our Etsy">
-                                              </a>
-                                              </div>
-                                      </div>
-                                      </div>
                                     </div>
 				</div>
                 </div>
 			<div class="container-fluid">
 				<div class="row" id="jewelry-images">
 
-                        <!--<a href="https://www.facebook.com/Grinnell-Designs-Ltd-170412403038483/">-->
-						<div class="col-md-3 col-xs-6">
-                            <img class="img-responsive" src="./assets/web-1.jpg">
-                            <!--
+                        <a href="#about">
+						<div class="col-lg-3 col-sm-6 col-xs-12">
+                                <!--<img class="img-responsive" src="./assets/web-4.jpg">-->
+							<div class="jumbotron" id="aboutus"> 
+								<div class="fill">
+									<div class="container">
+										<h2> About us </h2>
+									</div>
+								</div>
+                            </div>
+						</div>
+                        </a>
+
+                        <a href="https://www.facebook.com/Grinnell-Designs-Ltd-170412403038483/">
+						<div class="col-lg-3 col-xs-12 col-sm-6">
+                                <!--<img class="img-responsive" src="./assets/web-1.jpg">-->
 							<div class="jumbotron" id="facebook"> 
 								<div class="fill">
 									<div class="container">
@@ -90,27 +78,14 @@
 										</div>
 									</div>
 								</div>
-                            </div>-->
+                            </div>
 						</div>
-                        <!--</a>-->
+                        </a>
 
-                        <!--<a href="#about">-->
-						<div class="col-md-3 col-xs-6">
-                            <img class="img-responsive" src="./assets/web-4.jpg">
-							<!--<div class="jumbotron" id="aboutus"> 
-								<div class="fill">
-									<div class="container">
-										<h2> About us </h2>
-									</div>
-								</div>
-                            </div>-->
-						</div>
-                        <!--</a>-->
-
-                        <!--<a href="https://www.linkedin.com/company/grinnell-designs">-->
-						<div class="col-md-3 col-xs-6">
-                            <img class="img-responsive" src="./assets/web-2.jpg">
-							<!--<div class="jumbotron" id="linkedin"> 
+                        <a href="https://www.linkedin.com/company/grinnell-designs">
+						<div class="col-lg-3 col-xs-12 col-sm-6">
+                                <!--<img class="img-responsive" src="./assets/web-2.jpg">-->
+							<div class="jumbotron" id="linkedin"> 
 								<div class="fill">
 									<div class="container">
 										<div class="media">
@@ -123,13 +98,13 @@
 										</div>
 									</div>
 								</div>
-                            </div>-->
+                            </div>
 						</div>
-                        <!--</a>-->
-                        <!--<a href="#">-->
-						<div class="col-md-3 col-xs-6 col-md-middle ">
-                            <img class="img-responsive" src="./assets/web-3.jpg">
-                            <!--<div class="jumbotron" id="etsy"> 
+                        </a>
+                        <a href="#">
+						<div class="col-lg-3 col-xs-12 col-sm-6">
+                                <!--<img class="img-responsive" src="./assets/web-3.jpg">-->
+                            <div class="jumbotron" id="etsy"> 
 								<div class="fill">
 									<div class="container">
 										<div class="media">
@@ -143,86 +118,191 @@
 										</div>
                                     </div>
                                 </div>
-                            </div>-->
+                            </div>
 						</div>
-                        <!--</a>-->
+                        </a>
 
 				</div>
 			</div>
 		</div>
-            <div class="jumbotron" id="customers">
-                    <div class="container">
-                        <div class="row">
-                                <div class="col-md-3 col-xs-6">
-                                        <img class="img-responsive" src="./assets/bw-logos/apple.svg">
-                                </div>
-                                <div class="col-md-3 col-xs-6">
-                                        <img class="img-responsive" src="./assets/bw-logos/hp.svg">
-                                </div>
-                                <div class="col-md-3 col-xs-6">
-                                        <img class="img-responsive" src="./assets/bw-logos/forbes.svg">
-                                </div>
-                                <div class="col-md-3 col-xs-6">
-                                        <img class="img-responsive" src="./assets/bw-logos/canon.svg">
-                                </div>
-                        </div>
-                    </div>
-            </div>
     </div>
-		<div class="container" id=about>
+    <div class="container-fluid" id=about>
+
+    <div class="containter-fluid" id=about-lead>
+		<div class="container">
 			<div class="page-header">
 				<h1> About us </h1>
 			</div>
+                <div class="row vertical-align">
+                        <div class="col-sm-6 col-md-4 col-md-offset-1 " id="slideshow">
+                                <!--<hr id=slideshow-border-top />-->
+                    <div id="jssor_1" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 400px; height: 300px; overflow: hidden; visibility: hidden;">
+                        <!-- Loading Screen -->
+                        <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
+                            <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+                            <div style="position:absolute;display:block;background:url('img/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
+                        </div>
+                        <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 400px; height: 300px; overflow: hidden;">
+                            <div data-p="112.50" style="display: none;">
+                                <img data-u="image" src="assets/slideshow/01.jpg" />
+                            </div>
+                            <div data-p="112.50" style="display: none;">
+                                <img data-u="image" src="assets/slideshow/02.jpg" />
+                            </div>
+                            <div data-p="112.50" style="display: none;">
+                                <img data-u="image" src="assets/slideshow/03.jpg" />
+                            </div>
+                            <div data-p="112.50" style="display: none;">
+                                <img data-u="image" src="assets/slideshow/04.jpg" />
+                            </div>
+                            <div data-p="112.50" style="display: none;">
+                                <img data-u="image" src="assets/slideshow/05.jpg" />
+                            </div>
+                            <a data-u="ad" href="http://www.jssor.com" style="display:none">jQuery Slider</a>
+                        
+                        </div>
+                        <!-- Bullet Navigator -->
+                        <div data-u="navigator" class="jssorb01" style="bottom:10px;right:16px;" data-autocenter="1">
+                            <div data-u="prototype" style="width:6px;height:6px;"></div>
+                        </div>
+                        <!-- Arrow Navigator -->
+                        <span data-u="arrowleft" class="jssora13l" style="top:0px;left:30px;width:40px;height:50px;" data-autocenter="2"></span>
+                        <span data-u="arrowright" class="jssora13r" style="top:0px;right:30px;width:40px;height:50px;" data-autocenter="2"></span>
+                    </div>
+                    <!--<hr id=slideshow-border-bottom />-->
+                    </div>
+                        <div class=" col-sm-6 col-md-6 col-md-offset-1 col-lg-offset-0">
+			    <p class=lead> 
+                Grinnell Designs is a leader in costume jewelry manufacturing and product development, with a fully operational facility situated in the heart of New York's garment district. 
+                </p>
+                <p>
+                Since its inception in 1994, Grinnell has worked with many fashion and jewelry houses, including Escada, Doncaster Collection, Bill Blass New York, Michael Kors, Isaac Mizrahi, Tommy Hilfiger, Lela Rose, Peter Som and Zac Posen, to name a few. 
+                </p>
+                <p>
+                Armed with skilled professionals in product development, design, and production/manufacturing, Grinnell continues to supply the fashion and jewelry industries with the best quality products <span class=text-uppercase>manufactured locally</span>, with the option of producing large quantity/mass-market goods through its supply partners overseas. 
+                </p>
 
-			<!--
-			<div class="starter-template">
-				<h1>Bootstrap starter template</h1>
-				<p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
-			</div>
--->
-			<p class=lead> 
-Grinnell Designs is a leader in costume jewelry manufacturing and product development, with a fully operational facility situated in the heart of New York's garment district. 
-</p>
+                        </div>
 
-<p>
-Since its inception in 1994, Grinnell has worked with a lot of fashion and jewelry houses, including Escada, Doncaster Collection, Bill Blass New York, Michael Kors, Isaac Mizrahi, Tommy Hilfiger, Lela Rose, Peter Som and Zac Posen, to name a few. 
-</p>
+</div>
+</div>
+</div>
 
-<p>
-Armed with skilled professionals in product development, design, and production/manufacturing, Grinnell continues to supply the fashion and jewelry industries with the best quality products <span class=text-uppercase>manufactured locally</span>, with the option of producing large quantity/mass-market goods through its supply partners overseas. 
-</p>
+<div class="containter-fluid" >
+<div class="container">
 
-<p>
-	Grinnell offers exceptional service in the following areas of production 
-</p>
-<ul> 
-	<li> Product Development </li>
-	<li> Modelmaking </li>
-	<li> Molds (master casting and/or production)  </li>
-	<li> Jewelry/product assembly  </li>
-	<li> Soldering  </li>
-	<li> Metal cleaning and polishing  </li>
-	<li> Spin casting (lead free white metal)  </li>
-</ul>
 
-<p>
-	All techniques in assembly and jewelry manipulation, including 
-	</p>
-<ul>
-	<li>Hand knotting (pearls/beads) </li>
-	<li>Wire wrapping (single, full-wrap, rosary-links)</li> 
-	<li>Gluing (including rhinestone pave')</li> 
-	<li>Enameling and enamel color mixing</li>
-	<li>Bead stringing</li>
-</ul>
+    </div><!-- /.container -->
+    </div><!-- /.container -->
+    <div class="container-fluid feature"id="feature-1">
+            <div class="container" >
+<div class="row">
+        <div class="col-sm-push-5 col-sm-4 col-sm-offset-2 image-container">
+                <img class="img-responsive" src="assets/about/01.jpg"> 
+        </div>
+        <div class="col-sm-pull-6 col-sm-offset-1 col-sm-4">
+                <p>
+                    Grinnell offers exceptional service in the following areas of production 
+                </p>
+                <ul> 
+                    <li> Product Development </li>
+                    <li> Modelmaking </li>
+                    <li> Molds (master casting and/or production)  </li>
+                    <li> Jewelry/product assembly  </li>
+                    <li> Soldering  </li>
+                    <li> Metal cleaning and polishing  </li>
+                    <li> Spin casting (lead free white metal)  </li>
+                </ul>
+        </div>
+</div>
+<hr />
+</div> <!-- container end -->
+</div>
+    <div class="container-fluid feature "id="feature-2">
+            <div class="container" >
+<div class="row">
 
-		</div><!-- /.container -->
+        <div class="col-sm-4 col-sm-offset-1 image-container">
+                <img class="img-responsive" src="assets/about/02.jpg">
+        </div>
+        <div class="col-sm-4 col-sm-offset-2">
+                <p>
+                    All techniques in assembly and jewelry manipulation, including 
+                    </p>
+                <ul>
+                    <li>Hand knotting (pearls/beads) </li>
+                    <li>Wire wrapping (single, full-wrap, rosary-links)</li> 
+                    <li>Gluing (including rhinestone pave')</li> 
+                    <li>Enameling and enamel color mixing</li>
+                    <li>Bead stringing</li>
+                </ul>
+
+		</div>
 	</div>
+    </div><!-- /.container -->
+    </div><!-- /.container -->
+
+    </div> <!-- End of #about -->
+
+
+
+        <div class="container" id="contact">
+                <div class="page-header">
+                        <h1>
+                                Contact
+                        </h1>
+                </div>
+                        <div class="row">
+                                <div class="col-sm-4">
+                                        <strong>For general inquiries, including new accounts:</strong>
+                                        <address>
+                                  <abbr title="Email">E:</abbr> 
+                                                <a href="info@grinnelldesigns.com">
+                                                        info@grinnelldesigns.com 
+                                                </a><br>
+                                  <abbr title="Email">E:</abbr> 
+                                                <a href="pathudson@grinnelldesigns.com">
+                                                        pathudson@grinnelldesigns.com <br>
+                                                </a>
+                                  <abbr title="Phone">P:</abbr> (212) 391-5277 ext 4 
+                                        </address>
+                                </div>
+                                <div class="col-sm-4">
+                                        <strong>For production inquiries:</strong>
+                                        <address>
+                                  <abbr title="Email">E:</abbr> 
+                                                <a href="mailto:priya@grinnelldesigns.com">
+                                                        priya@grinnelldesigns.com 
+                                                </a><br>
+                                  <abbr title="Phone">P:</abbr> (212) 391-5277 ext. 1 <br>
+                                  <abbr title="Email">E:</abbr> 
+                                                <a href="mailto:nicolette@grinnelldesigns.com">
+                                                        nicolette@grinnelldesigns.com 
+                                                </a><br>
+                                  <abbr title="Phone">P:</abbr> (212) 391-5277 ext. 5
+                                        </address>
+                                </div>
+                                <div class="col-sm-4">
+                                        <strong> Address </strong>
+                                        <address>
+                                                Grinnell Designs Ltd. <br>
+                                                580 8th Avenue, 4th Floor <br>
+                                                New York, NY 10018 <br>
+                                  <abbr title="Phone">P:</abbr> (212) 391-5277 <br>
+                                  <abbr title="Fax">F:</abbr> (212) 391-5835
+                                        </address>
+                </div>
+        </div>
+</div>
+<div class="container-fluid" id="map" >
+        <!--<iframe width="100%" height="100%" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=Grinnell%20Designs&key=AIzaSyDYx0XtPbgDzxcoDSNX2yM1mqIJTdn-llA" allowfullscreen></iframe>-->
+<div id="google-map"> </div>
+</div>
 		<div class="jumbotron" id=footer>
 			<div class="container" >
-                    <row>
-                            <div class="col-md-4" id="contact">
-                                    <h4> Contact </h4>
+                    <div class="row">
+                            <div class="col-sm-4" id="address">
+                                    <h4> Address </h4>
                                 <address>
                                   Grinnell Designs<br>
                                   580 8th Avenue, 4th Floor<br>
@@ -231,7 +311,7 @@ Armed with skilled professionals in product development, design, and production/
                                   <abbr title="Email">E:</abbr> <a href="mailto:info@grinnelldesigns.com"> info@grinnelldesigns.com </a>
                                 </address>
                         </div>
-                        <div class="col-md-4" id="links">
+                        <div class="col-sm-4" id="links">
                                 <h4> Links </h4>
                                 <ul>
                                         <li>
@@ -248,14 +328,17 @@ Armed with skilled professionals in product development, design, and production/
                                 </ul>
 
                         </div>
-                        <div class="col-md-4"> </div>
-                        <div class="col-md-12" style="text-align:right"> &copy; 2016 Grinnell Designs </div>
-                </row>
+                        <div class="col-xs-12" style="text-align:right"> &copy; 2016 Grinnell Designs </div>
+                </div>
 			</div>
 		</div>
 		    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="js/jquery-1.12.3.min.js"></script>
 		<!-- Include all compiled plugins (below), or include individual files as needed -->
 		<script src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/jssor.slider.mini.js"></script>
+
+
+    <script src="bin/bundle.js"></script>
 	</body>
 </html>
