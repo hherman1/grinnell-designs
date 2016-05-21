@@ -66,12 +66,16 @@ $("#scroll-arrow").click(function() {
         if(index == -1) {
                 scrollTo(scrollElements[0],function(){
                         currentElement = scrollElements[0];
+                        setHashIfNoScroll(currentElement);
                 });
         } else if(index == scrollElements.length-1) {
-                scrollTo("#footer");
+                scrollTo("#footer",function(){
+                        setHashIfNoScroll("#footer");
+                });
         } else {
                 scrollTo(scrollElements[index + 1],function(){
                         currentElement = scrollElements[index+1];
+                        setHashIfNoScroll(currentElement);
                 });
         }
 });
