@@ -73,9 +73,13 @@
 	$(window).scroll(function() {
 	        if($(document).height() == $(document).scrollTop() + $(window).height()) {
 	                $("#scroll-arrow").css("opacity","0");
+	                $("#scroll-arrow").css("cursor","default");
+	                $("#scroll-arrow").css("pointer-events","none");
 	        }
 	        else {
 	                $("#scroll-arrow").css("opacity","1");
+	                $("#scroll-arrow").css("cursor","pointer");
+	                $("#scroll-arrow").css("pointer-events","initial");
 	        }
 	});
 	/*
@@ -88,7 +92,7 @@
 	*/
 	
 	
-	var scrollElements = ["#home","#about","#feature-1","#feature-2","#contact","#map"]
+	var scrollElements = ["#home","#about","#contact"]
 	var currentElement = scrollElements[0];
 	$(scrollElements.join(",")).waypoint({
 	        handler: function(direction){
