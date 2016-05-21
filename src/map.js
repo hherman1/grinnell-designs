@@ -15,7 +15,7 @@ $script(["https://maps.googleapis.com/maps/api/js?key=AIzaSyDYx0XtPbgDzxcoDSNX2y
           minZoom:13,
         });
         function centerMap() {
-                map.panTo(grinnellCoord);
+                setTimeout(function(){map.panTo(grinnellCoord)},15); //Timeout is hack so that google maps correctly recenters.
         }
         $(window).bind("load",centerMap);
         $(window).bind("resize",centerMap);
