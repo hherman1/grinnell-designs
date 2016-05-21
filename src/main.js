@@ -42,15 +42,15 @@ $('#footer').waypoint({
 */
 
 
-var currentElement = null;
 var scrollElements = ["#home","#about","#feature-1","#feature-2","#contact","#map"]
+var currentElement = scrollElements[0];
 $(scrollElements.join(",")).waypoint({
         handler: function(direction){
                 var thisID = '#' + this.element.id;
                 var index = scrollElements.indexOf(thisID);
                 if(direction == 'down') {
                         currentElement = thisID
-                } else if(index == -1) {
+                } else if(index <= 0) {
                         currentElement = scrollElements[0];
                 } else {
                         currentElement = scrollElements[index-1];
@@ -60,11 +60,15 @@ $(scrollElements.join(",")).waypoint({
 $("#scroll-arrow").click(function() {
         var index = scrollElements.indexOf(currentElement);
         if(index == -1) {
-                scrollTo(scrollElements[0]);
-        } else if(index == scrollElements.length) {
+                scrollTo(scrollElements[0],function(){
+                        currentElement = scrollElements[0];
+                });
+        } else if(index == scrollElements.length-1) {
                 scrollTo("#footer");
         } else {
-                scrollTo(scrollElements[index + 1]);
+                scrollTo(scrollElements[index + 1],function(){
+                        currentElement = scrollElements[index+1];
+                });
         }
 });
 
