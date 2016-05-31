@@ -82,14 +82,6 @@
 	                $("#scroll-arrow").css("pointer-events","initial");
 	        }
 	});
-	/*
-	$('#footer').waypoint({
-	        handler: function() {
-	            console.log("bottom of page");
-	        },
-	        offset: 'bottom-in-view'
-	});
-	*/
 	
 	
 	var scrollElements = ["#home","#about","#contact"]
@@ -156,12 +148,17 @@
 	                }
 	                if(hash == "#") {
 	                    scrollTo("body",setWindowHash); 
-	                } else {
+	                } else if(hash=="#contact") {
+	                        scrollTo("#map",function() {
+	                                setHashIfNoScroll("#contact");
+	                        });
+	                }else {
 	                        scrollTo(hash,setWindowHash);
 	                }
 	                if(hash == "#about") {
-	                        $("#about-lead,#feature-1").css("opacity","1");
+	                        $("#about #about-lead,#about #feature-1").css("opacity","1");
 	                }
+	
 	        }
 	});
 	centerHome();
@@ -10239,7 +10236,7 @@
 	      $AutoPlay: true,
 	      $Idle: 5000,
 	      //$PauseOnHover: 3,
-	      $SlideWidth: 400,
+	      $SlideWidth: 500,
 	      $SlideDuration: 1000,
 	      $SlideEasing: $JssorEasing$.$EaseInOutSine,
 	      $Cols: 2,

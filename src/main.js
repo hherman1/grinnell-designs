@@ -36,14 +36,6 @@ $(window).scroll(function() {
                 $("#scroll-arrow").css("pointer-events","initial");
         }
 });
-/*
-$('#footer').waypoint({
-        handler: function() {
-            console.log("bottom of page");
-        },
-        offset: 'bottom-in-view'
-});
-*/
 
 
 var scrollElements = ["#home","#about","#contact"]
@@ -110,12 +102,17 @@ $("a").click(function(e) {
                 }
                 if(hash == "#") {
                     scrollTo("body",setWindowHash); 
-                } else {
+                } else if(hash=="#contact") {
+                        scrollTo("#map",function() {
+                                setHashIfNoScroll("#contact");
+                        });
+                }else {
                         scrollTo(hash,setWindowHash);
                 }
                 if(hash == "#about") {
-                        $("#about-lead,#feature-1").css("opacity","1");
+                        $("#about #about-lead,#about #feature-1").css("opacity","1");
                 }
+
         }
 });
 centerHome();

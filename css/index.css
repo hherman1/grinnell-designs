@@ -4,7 +4,11 @@ html {
 body {
   height:100%;
   font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+  font-size:13px;
   padding-top: 0;
+}
+ul {
+        list-style-type:none;
 }
 .full-screen {
 	min-height:100%;
@@ -92,11 +96,22 @@ body {
 .navbar-fixed-top {
 	background-color:#fff;
 }
+#navbar {
+        font-size:9pt;
+}
 #grinnell-logo {
-        text-align:center;
 }
 #grinnell-logo img{
 	height:130px;
+}
+#grinnell-logo.centered-box {
+        position:relative;
+        left:50%;
+        transform:translateX(-50%);
+        text-align:center;
+}
+#grinnell-logo.centered-box>img {
+        height:175px;
 }
 #scroll-arrow {
         cursor:pointer;
@@ -128,13 +143,15 @@ body {
 #contact {
 	padding-bottom:60px;
 }
-#about, #contact {
+.section {
 	padding-top:15px;
 }
-#about {
+.section {
         padding-left:0;
         padding-right:0;
         padding-bottom:30px;
+}
+.grey { 
         background-color:#eee;
 }
 .feature {
@@ -153,13 +170,13 @@ body {
 /*        background:linear-gradient(90deg,white,white 60%,#eee 100%,white);
         margin-bottom:60px;*/
 }
-#about .centered {
+.section .centered {
         width:75%;
         position:relative;
         left:50%;
         transform:translateX(-50%);
 }
-#about .feature img, #slideshow img {
+.section .feature img, #slideshow img {
         max-height:250px;
         padding:5px;
         border: 1px solid #ddd;
@@ -168,9 +185,19 @@ body {
 div#about hr, #about .page-header {
         border-color:#ddd;
 }
+#about-lead p.lead {
+        font-size:16px;
+}
 #footer {
 	background-color:#eee;
     margin-bottom:0;
+}
+#about.brown,#footer.brown {
+    background-color: #482706;
+    color: #eee;
+}
+#footer.brown a {
+    color: #aaa;
 }
 a, a:focus, a:hover {
     color:#5B2313;
@@ -217,9 +244,10 @@ a, a:focus, a:hover {
 	height:101px;
 }
 #home .media-object {
-	height:50px;
+	height:25px;
 }
 #home .media-body {
+        text-align:center;
         vertical-align:middle;
 }
 .jumbotron {
@@ -249,6 +277,15 @@ a, a:focus, a:hover {
 #aboutus {
 	//background-color: #000000;
 	background-image: url(../assets/web-4.jpg);
+}
+#aboutus {
+        text-align:center;
+}
+#aboutus span {
+        display:block;
+        position:relative;
+        top:50%;
+        transform:translateY(-50%);
 }
 #sample3 {
 	background: url(../assets/sample3.jpg) no-repeat center center local; 

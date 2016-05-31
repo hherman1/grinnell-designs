@@ -6,7 +6,7 @@ jQuery(document).ready(function ($) {
       $AutoPlay: true,
       $Idle: 5000,
       //$PauseOnHover: 3,
-      $SlideWidth: 400,
+      $SlideWidth: 500,
       $SlideDuration: 1000,
       $SlideEasing: $JssorEasing$.$EaseInOutSine,
       $Cols: 2,
