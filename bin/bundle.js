@@ -10260,8 +10260,8 @@
 	        if (refWidth) {
 	            //refSize = Math.min(refSize, 800);
 	            jssor_1_slider.$ScaleWidth(refWidth);
-	            if(jssor_1_slider.$ScaleHeight() > 250) {
-	                    jssor_1_slider.$ScaleHeight(250);
+	            if(jssor_1_slider.$ScaleHeight() > 300) {
+	                    jssor_1_slider.$ScaleHeight(300);
 	            }
 	            var smWidth = 767;
 	            var mdWidth = 982;

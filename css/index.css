@@ -104,13 +104,13 @@ ul {
 #grinnell-logo img{
 	height:130px;
 }
-#grinnell-logo.centered-box {
+#grinnell-logo.centered-logo {
         position:relative;
         left:50%;
         transform:translateX(-50%);
         text-align:center;
 }
-#grinnell-logo.centered-box>img {
+#grinnell-logo.box-logo>img {
         height:175px;
 }
 #scroll-arrow {
@@ -176,8 +176,10 @@ ul {
         left:50%;
         transform:translateX(-50%);
 }
-.section .feature img, #slideshow img {
+.section .feature img {
         max-height:250px;
+}
+.section .feature img, #slideshow img {
         padding:5px;
         border: 1px solid #ddd;
         background-color:white;
