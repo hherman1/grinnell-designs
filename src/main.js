@@ -4,6 +4,9 @@ var waypoint = require("imports?jQuery=jquery!../node_modules/waypoints/lib/jque
 require("./map.js");
 require("./slider.js");
 
+if(window.location.hash == "#home") {
+        window.scroll(0,0);
+}
 function fadeIn(selector,offset) {
         var fadeIns = jQuery(selector);
         fadeIns.css("opacity","0");
@@ -102,10 +105,6 @@ $("a").click(function(e) {
                 }
                 if(hash == "#") {
                     scrollTo("body",setWindowHash); 
-                } else if(hash=="#contact") {
-                        scrollTo("#map",function() {
-                                setHashIfNoScroll("#contact");
-                        });
                 }else {
                         scrollTo(hash,setWindowHash);
                 }

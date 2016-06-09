@@ -50,6 +50,9 @@
 	__webpack_require__(3);
 	__webpack_require__(5);
 	
+	if(window.location.hash == "#home") {
+	        window.scroll(0,0);
+	}
 	function fadeIn(selector,offset) {
 	        var fadeIns = jQuery(selector);
 	        fadeIns.css("opacity","0");
@@ -148,10 +151,6 @@
 	                }
 	                if(hash == "#") {
 	                    scrollTo("body",setWindowHash); 
-	                } else if(hash=="#contact") {
-	                        scrollTo("#map",function() {
-	                                setHashIfNoScroll("#contact");
-	                        });
 	                }else {
 	                        scrollTo(hash,setWindowHash);
 	                }
