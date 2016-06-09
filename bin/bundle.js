@@ -10242,9 +10242,6 @@
 	      $Cols: 2,
 	      $Align: 0,
 	      $FillMode: 1,
-	      $ArrowNavigatorOptions: {
-	        $Class: $JssorArrowNavigator$
-	      },
 	      $BulletNavigatorOptions: {
 	        $Class: $JssorBulletNavigator$
 	      }
