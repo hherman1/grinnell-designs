@@ -52,6 +52,7 @@
 	
 	if(window.location.hash == "#home") {
 	        window.scroll(0,0);
+	        window.location.hash = "#";
 	}
 	function fadeIn(selector,offset) {
 	        var fadeIns = jQuery(selector);
