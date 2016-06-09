@@ -13,6 +13,9 @@ ul {
 abbr {
         border-bottom:none!important;
 }
+.not-scrolled-to-top {
+        border-bottom:1px solid #eee
+}
 .full-screen {
 	min-height:100%;
 }

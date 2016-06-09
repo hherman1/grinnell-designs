@@ -85,6 +85,11 @@
 	                $("#scroll-arrow").css("cursor","pointer");
 	                $("#scroll-arrow").css("pointer-events","initial");
 	        }
+	        if($(document).scrollTop() != 0) {
+	                $("#navbar").addClass("not-scrolled-to-top");
+	        } else { 
+	                $("#navbar").removeClass("not-scrolled-to-top");
+	        }
 	});
 	
 	
