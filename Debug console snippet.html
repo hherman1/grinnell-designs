@@ -1,0 +1,70 @@
+    <div id="debug-panel" style="position:fixed;left:0;bottom:0;padding:10px;background-color:#eee;border: 1px black solid;">
+                                    <input type="checkbox" id="collapse-test-options"> Collapse options
+            <h3> Test Options </h3>
+            <ul>
+                    <li> <input type="checkbox" id="centered-logo" /> Centered logo </li>
+                    <li> <input type="checkbox" id="type-logo" /> Type logo </li>
+                    <li> <input type="text" id="navbar-font-size" placeholder="9pt" style="width:50px"/>  Font-size of Navigation Bar. </li>
+                    <li> <input type="text" id="about-lead-font-size" placeholder="16px" style="width:50px"/>  Font-size of "About Us" lead text. </li>
+                    <li> <input type="text" id="body-font-size" placeholder="13px" style="width:50px"/>  Font-size of all normal text. </li>
+                    <li> <input type="checkbox" id="white-footer" /> White footer </li>
+                    <li> <input type="checkbox" id="brown-about" /> Brown "About Us" </li>
+            </ul>
+    </div>
+    <style>
+.debug-collapsed>*:not(#collapse-test-options) {
+    display: none;
+}
+    </style>
+    <script type="text/javascript">
+// Debug options
+    var $ = jQuery;
+    $("#collapse-test-options").change(function() {
+                    if($(this).prop("checked")) {
+                    $("#debug-panel").addClass("debug-collapsed");
+                    }else{
+                    $("#debug-panel").removeClass("debug-collapsed");
+                    }
+                    });
+    $("#centered-logo").change(function() {
+                    if($(this).prop("checked")) {
+                        $("#grinnell-logo").addClass("centered-logo");
+                        } else {
+                        $("#grinnell-logo").removeClass("centered-logo");
+                        };
+                    });
+    $("#type-logo").change(function() {
+                    if($(this).prop("checked")) {
+                        $("#grinnell-logo").removeClass("box-logo");
+                        $("#grinnell-logo>img").attr("src","assets/grinnell-logo.jpg");
+                        } else {
+                        $("#grinnell-logo").addClass("box-logo");
+                        $("#grinnell-logo>img").attr("src","assets/grinnell-logo-box.jpg");
+                        };
+                    });
+$("#navbar-font-size").keyup(function() {
+                $("#navbar").css("font-size",$(this).val());
+                });
+$("#about-lead-font-size").keyup(function() {
+                $("#about-lead p.lead").css("font-size",$(this).val());
+                });
+$("#body-font-size").keyup(function() {
+                $("body").css("font-size",$(this).val());
+                });
+    $("#white-footer").change(function() {
+                    if($(this).prop("checked")) {
+                    $("#footer").removeClass("brown");
+                    }else{
+                    $("#footer").addClass("brown");
+                    }
+                    });
+    $("#brown-about").change(function() {
+                    if($(this).prop("checked")) {
+                    $("#about").addClass("brown");
+                    $("#about").removeClass("grey");
+                    }else{
+                    $("#about").removeClass("brown");
+                    $("#about").addClass("grey");
+                    }
+                    });
+    </script>
